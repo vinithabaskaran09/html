@@ -40,11 +40,14 @@ Yes -->
         <h1>Order a Melongram</h1>
     </head>
         <body>
+        <section id ="indro">
         <p> There's no better way to show a loved one you care than with a Melongram.</p>
         <p>
             Each Melongram comes with a custom message printed on high-quality cardstock
             and your choice of a hand-picked, premium melon.
         </p>
+        </section>
+        <section id="select-type">
         <h2>Melon Type</h2>
         <p>Choose from one of the melon </p>
         <table>
@@ -61,18 +64,20 @@ Yes -->
                 <td>$1750</td>
             </tr>
         </table>
+        </section>
+        </body>
+        <section id="Form">
         <h2>Order Form</h2>
         <form>
             <div>
-            Your name
-            <input type ="text" name ="username">
+            <label for="name">Your name</label>
+            <input type ="text" name ="username" id="name">
             </div>
             <div>
-                Who are you sending this to?
-                <input type="text" name="Melongram recipient’s name">
+                <label for="recipient's name">Who are you sending this to?</label>
+                <input type="text" name="Melongram recipient’s name" id="recipient's name">
             </div>
             <div>
-                
                 <label for="Choose a melon">Choose a melon </label>
                 <select name="melon" id="Choose a melon">
                     <option value="Watermelon">Watermelon</option>
@@ -81,10 +86,12 @@ Yes -->
                 </select>
             </div>
             <div>
-                <label for="When Should we deliver">When Should we deliver</label>
+                <fieldset>
+                    <legend>When Should we deliver?</legend>
                 <input type="radio" name="time" value="AM">Morning
                 <input type="radio" name="time" value="PM">Evening
                 <input type="radio" name="time" value="any">Anytime
+                </fieldset>
             </div>
             <div>
                 <p>Enter your Message</p>
@@ -93,12 +100,14 @@ Yes -->
             </div>
             <div>
                 Subscribe to our newsletter
-                <input type="checkbox" name="subscribe" value="yes">
+                <input type="checkbox" name="subscribe" value="yes" id="yes">
+                <label for="yes">Yes</label>
             </div>
             <div>
                 <input type="submit">
             </div>
-        </form>
+            </form>
+        </section>
         </body>
     
 </html>
